@@ -7,12 +7,12 @@ pipeline {
         stage('Test') { 
             steps {
                 sh 'npm install'
-                sh 'npm test'
+                sh 'npm run test'
             }
         }
         stage('Build') { 
             steps {
-                sh 'npm build'
+                sh 'npm run build'
             }
         }
         // stage('Deliver') { 
